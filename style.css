@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(./Dice\ Images/diceWallpaper.jpg);
+}
+
+#outer-box {
+    position: relative;
+    border: 2px dotted black;
+    background-image: url('./Dice\ Images/diceWallpaper-5.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    left: 250px;
+    margin: 7%;
+    width: 40rem;
+}
+
+.player-0 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;   
+}
+.player-1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;   
+}
+
+.player {
+    color: red;
+    margin-left: 20px;
+}
+.global-score {
+    /* border: 1px solid blue; */
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.global-score p {
+    margin: 22px 22px;
+    font-weight: bolder;
+    color: purple;
+    font-size: 4rem;
+}
+
+.current-score {
+    border: 2px double rgb(94, 91, 91);
+    background-color: chartreuse;
+    width: 90px;
+    height: 90px;
+    margin: 100px 30px 50px;
+    font-weight: bolder;
+    color: darkblue;
+    font-family: Cambria;
+    text-align: center;
+}
+
+.current-score p {
+    margin: 9px 9px;
+    font-weight: bolder;
+    color: red;
+    font-size: 1.3rem;
+}
+
+.middle-section div.bottom-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 248px;
+
+}
+.middle-section img {
+    margin-top: 70px;
+}
+
+.middle-section #btn-new {
+    margin-top: 20px;
+    font-size: 15px;
+    width: 6rem;
+    /* height: 2.5rem; 
+    padding: 10px; */
+}
+.btn:hover {
+    background-color: rebeccapurple;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+.middle-section #btn-roll {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 6rem;
+    height: 2.5rem;
+    padding: 10px;
+
+}
+.middle-section #btn-hold {
+    font-size: 16px;
+    width: 6rem;
+    height: 2.5rem;
+    padding: 10px;
+
+}
+.active-0 .player::after {
+    content: "\2022";
+    font-size: 60px;
+    position: absolute;
+    color: green;
+    top: 35px;
+    left: 195px;
+
+}
+.active-1 .player::after {
+    content: "\2022";
+    font-size: 60px;
+    position: absolute;
+    color: green;
+    top: 35px;
+    right: 46px;
+    
+
+}
+
+
